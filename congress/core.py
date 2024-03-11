@@ -99,7 +99,7 @@ class Congress():
             while_count += 1
 
         if response.status_code != 200:
-            raise ValueError("Bad request")
+            raise ValueError(f"Bad request; API responded with status code {response.status_code}")
         else:
             return response
 
